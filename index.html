@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="CYCWIT — Choose Your Career With Information Technology. Explore career paths in Web Development, Data Science, Databases, and more." />
+    <meta name="keywords"
+        content="IT careers, web development, data science, database, programming, career guide, CYCWIT" />
+    <meta property="og:title" content="CYCWIT — Choose Your Career With IT" />
+    <meta property="og:description"
+        content="Your ultimate guide to launching an IT career. Explore paths, learn skills, and build your future." />
+    <meta property="og:type" content="website" />
+    <title>CYCWIT — Choose Your Career With Information Technology</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ═══════════════════════════════ NAVBAR ═══════════════════════════════ -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo" aria-label="CYCWIT Home">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">CYC<span class="logo-accent">WIT</span></span>
+            </a>
+
+            <ul class="nav-links" id="navLinks" role="list">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#paths" class="nav-link">Career Paths</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#stats" class="nav-link">Stats</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode" title="Toggle theme">
+                    <span class="theme-icon" id="themeIcon">🌙</span>
+                </button>
+                <a href="#paths" class="btn btn-primary nav-cta">Get Started</a>
+                <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile overlay -->
+    <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
+
+    <!-- ═══════════════════════════════ HERO ═══════════════════════════════ -->
+    <section class="hero" id="hero" aria-label="Hero section">
+        <div class="hero-bg" aria-hidden="true">
+            <div class="hero-orb orb-1"></div>
+            <div class="hero-orb orb-2"></div>
+            <div class="hero-orb orb-3"></div>
+            <div class="hero-grid"></div>
+        </div>
+
+        <div class="container hero-content">
+            <div class="hero-badge reveal">
+                <span class="badge-dot"></span>
+                Your IT Career Navigator
+            </div>
+            <h1 class="hero-title reveal">
+                Choose Your Career<br />
+                <span class="gradient-text">With Information</span><br />
+                Technology
+            </h1>
+            <p class="hero-subtitle reveal">
+                Discover the perfect IT career path tailored for you. From web development to data science —
+                we map out every skill, tool, and milestone you need to succeed.
+            </p>
+            <div class="hero-actions reveal">
+                <a href="#paths" class="btn btn-primary btn-lg" id="exploreBtn">
+                    Explore Career Paths
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.5">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+                <a href="#features" class="btn btn-ghost btn-lg">See Features</a>
+            </div>
+            <div class="hero-tags reveal">
+                <span class="tag">🌐 Web Development</span>
+                <span class="tag">📊 Data Science</span>
+                <span class="tag">🗄️ Databases</span>
+                <span class="tag">🔍 Data Analytics</span>
+                <span class="tag">⚙️ App Development</span>
+            </div>
+        </div>
+
+        <div class="hero-scroll-hint" aria-hidden="true">
+            <div class="scroll-dot"></div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════ ABOUT ═══════════════════════════════ -->
+    <section class="section about-section" id="about" aria-label="About CYCWIT">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-label">Who We Are</p>
+                <h2 class="section-title">Built for the next generation of <span class="gradient-text">IT
+                        professionals</span></h2>
+                <p class="section-desc">CYCWIT simplifies your journey into the world of technology by giving you a
+                    clear, structured roadmap for every major IT career path.</p>
+            </div>
+
+            <div class="about-grid reveal">
+                <div class="about-card">
+                    <div class="about-icon">🎯</div>
+                    <h3>Career Clarity</h3>
+                    <p>No more guessing. We break down exactly what skills and tools you need for each career path.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">🗺️</div>
+                    <h3>Structured Roadmaps</h3>
+                    <p>Step-by-step learning paths built by industry professionals to take you from zero to job-ready.
+                    </p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">🚀</div>
+                    <h3>Industry-Aligned</h3>
+                    <p>Content is continuously updated to match what employers actually look for in 2024 and beyond.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════ CAREER PATHS ═══════════════════════════════ -->
+    <section class="section paths-section" id="paths" aria-label="Career paths">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-label">Explore</p>
+                <h2 class="section-title">Career <span class="gradient-text">Paths</span></h2>
+                <p class="section-desc">Five powerful tracks designed to guide you into the most in-demand IT roles of
+                    today.</p>
+            </div>
+
+            <div class="paths-grid">
+
+                <!-- Web App Development -->
+                <div class="path-card reveal" data-color="purple">
+                    <div class="card-header">
+                        <div class="card-icon">🖥️</div>
+                        <div class="card-badge">Most Popular</div>
+                    </div>
+                    <h3 class="card-title">Web Application Development</h3>
+                    <p class="card-desc">Build dynamic, scalable web applications using modern technologies and
+                        frameworks.</p>
+                    <ul class="card-skills">
+                        <li><span class="skill-dot"></span>HTML5 &amp; CSS3 Fundamentals</li>
+                        <li><span class="skill-dot"></span>JavaScript &amp; TypeScript</li>
+                        <li><span class="skill-dot"></span>React / Vue / Angular</li>
+                        <li><span class="skill-dot"></span>RESTful API Design</li>
+                        <li><span class="skill-dot"></span>State Management (Redux, Zustand)</li>
+                        <li><span class="skill-dot"></span>Testing &amp; CI/CD Pipelines</li>
+                    </ul>
+                    <div class="card-footer">
+                        <div class="card-tags">
+                            <span class="chip">Frontend</span>
+                            <span class="chip">Backend</span>
+                            <span class="chip">Fullstack</span>
+                        </div>
+                        <a href="#contact" class="card-link">Learn more →</a>
+                    </div>
+                </div>
+
+                <!-- Web Development Languages -->
+                <div class="path-card reveal" data-color="blue">
+                    <div class="card-header">
+                        <div class="card-icon">💻</div>
+                    </div>
+                    <h3 class="card-title">Web Development Languages</h3>
+                    <p class="card-desc">Master server-side programming languages powering the web behind the scenes.
+                    </p>
+                    <ul class="card-skills">
+                        <li><span class="skill-dot"></span>Python &amp; Django / Flask</li>
+                        <li><span class="skill-dot"></span>Java &amp; Spring Boot</li>
+                        <li><span class="skill-dot"></span>PHP &amp; Laravel</li>
+                        <li><span class="skill-dot"></span>Ruby on Rails</li>
+                        <li><span class="skill-dot"></span>C++ for Performance Systems</li>
+                        <li><span class="skill-dot"></span>Node.js &amp; Express.js</li>
+                    </ul>
+                    <div class="card-footer">
+                        <div class="card-tags">
+                            <span class="chip">Python</span>
+                            <span class="chip">Java</span>
+                            <span class="chip">PHP</span>
+                        </div>
+                        <a href="#contact" class="card-link">Learn more →</a>
+                    </div>
+                </div>
+
+                <!-- Database -->
+                <div class="path-card reveal" data-color="green">
+                    <div class="card-header">
+                        <div class="card-icon">🗄️</div>
+                    </div>
+                    <h3 class="card-title">Database Engineering</h3>
+                    <p class="card-desc">Design, optimize, and manage structured and unstructured data at scale.</p>
+                    <ul class="card-skills">
+                        <li><span class="skill-dot"></span>SQL &amp; Advanced Queries</li>
+                        <li><span class="skill-dot"></span>PostgreSQL &amp; MySQL</li>
+                        <li><span class="skill-dot"></span>MongoDB &amp; Redis (NoSQL)</li>
+                        <li><span class="skill-dot"></span>Database Design &amp; Normalization</li>
+                        <li><span class="skill-dot"></span>Performance Tuning &amp; Indexing</li>
+                        <li><span class="skill-dot"></span>Cloud Databases (AWS RDS, Firebase)</li>
+                    </ul>
+                    <div class="card-footer">
+                        <div class="card-tags">
+                            <span class="chip">SQL</span>
+                            <span class="chip">NoSQL</span>
+                            <span class="chip">Cloud</span>
+                        </div>
+                        <a href="#contact" class="card-link">Learn more →</a>
+                    </div>
+                </div>
+
+                <!-- Data Science -->
+                <div class="path-card reveal" data-color="orange">
+                    <div class="card-header">
+                        <div class="card-icon">🧠</div>
+                        <div class="card-badge">High Demand</div>
+                    </div>
+                    <h3 class="card-title">Data Science</h3>
+                    <p class="card-desc">Extract insights from data using machine learning, statistics, and AI
+                        techniques.</p>
+                    <ul class="card-skills">
+                        <li><span class="skill-dot"></span>Python for Data Science</li>
+                        <li><span class="skill-dot"></span>Machine Learning (Scikit-Learn)</li>
+                        <li><span class="skill-dot"></span>Deep Learning (TensorFlow, PyTorch)</li>
+                        <li><span class="skill-dot"></span>Data Wrangling (Pandas, NumPy)</li>
+                        <li><span class="skill-dot"></span>Statistical Analysis &amp; Modeling</li>
+                        <li><span class="skill-dot"></span>Natural Language Processing (NLP)</li>
+                    </ul>
+                    <div class="card-footer">
+                        <div class="card-tags">
+                            <span class="chip">ML</span>
+                            <span class="chip">AI</span>
+                            <span class="chip">Python</span>
+                        </div>
+                        <a href="#contact" class="card-link">Learn more →</a>
+                    </div>
+                </div>
+
+                <!-- Data Analyst -->
+                <div class="path-card reveal" data-color="pink">
+                    <div class="card-header">
+                        <div class="card-icon">📊</div>
+                    </div>
+                    <h3 class="card-title">Data Analytics</h3>
+                    <p class="card-desc">Turn raw data into business decisions with visualization, reporting, and
+                        analytics tools.</p>
+                    <ul class="card-skills">
+                        <li><span class="skill-dot"></span>Excel &amp; Google Sheets (Advanced)</li>
+                        <li><span class="skill-dot"></span>SQL for Analytics</li>
+                        <li><span class="skill-dot"></span>Power BI &amp; Tableau</li>
+                        <li><span class="skill-dot"></span>Python (Pandas, Matplotlib, Seaborn)</li>
+                        <li><span class="skill-dot"></span>Business Intelligence (BI) Concepts</li>
+                        <li><span class="skill-dot"></span>Storytelling with Data</li>
+                    </ul>
+                    <div class="card-footer">
+                        <div class="card-tags">
+                            <span class="chip">Power BI</span>
+                            <span class="chip">Tableau</span>
+                            <span class="chip">SQL</span>
+                        </div>
+                        <a href="#contact" class="card-link">Learn more →</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════ FEATURES ═══════════════════════════════ -->
+    <section class="section features-section" id="features" aria-label="Platform features">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-label">Platform</p>
+                <h2 class="section-title">Everything you need to <span class="gradient-text">succeed</span></h2>
+                <p class="section-desc">CYCWIT packs every tool and resource you need to navigate your IT career
+                    journey, all in one place.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card feature-large reveal">
+                    <div class="feature-icon-wrap">🗺️</div>
+                    <h3>Interactive Career Roadmaps</h3>
+                    <p>Visual step-by-step roadmaps that show you exactly where to start, what to learn next, and what
+                        skills to acquire along your journey.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon-wrap">📚</div>
+                    <h3>Curated Learning Resources</h3>
+                    <p>Hand-picked articles, tutorials, and courses for every skill in each career path.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon-wrap">🏆</div>
+                    <h3>Skill Assessments</h3>
+                    <p>Test your knowledge with quizzes that measure your readiness for real-world IT roles.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon-wrap">📄</div>
+                    <h3>Resume Builder</h3>
+                    <p>Build an ATS-friendly resume tied directly to the skills you've learned through the platform.</p>
+                </div>
+                <div class="feature-card feature-large reveal">
+                    <div class="feature-icon-wrap">🤖</div>
+                    <h3>AI-Powered Career Advisor</h3>
+                    <p>Get personalized career recommendations based on your interests, background, and goals. Our AI
+                        analyzes thousands of job postings to guide your learning path.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════ STATS ═══════════════════════════════ -->
+    <section class="section stats-section" id="stats" aria-label="Platform statistics">
+        <div class="container">
+            <div class="stats-grid reveal">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="5">0</div>
+                    <div class="stat-label">Career Tracks</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="50">0</div>
+                    <div class="stat-label">Core Skills Mapped</div>
+                    <div class="stat-suffix">+</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="200">0</div>
+                    <div class="stat-label">Learning Resources</div>
+                    <div class="stat-suffix">+</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="10000">0</div>
+                    <div class="stat-label">Students Guided</div>
+                    <div class="stat-suffix">+</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════ CTA ═══════════════════════════════ -->
+    <section class="section cta-section" id="contact" aria-label="Call to action">
+        <div class="container">
+            <div class="cta-inner reveal">
+                <div class="cta-orb cta-orb-1" aria-hidden="true"></div>
+                <div class="cta-orb cta-orb-2" aria-hidden="true"></div>
+                <p class="section-label">Ready?</p>
+                <h2 class="cta-title">Start your IT journey <span class="gradient-text">today</span></h2>
+                <p class="cta-desc">Join thousands of students who have already found their perfect IT career path with
+                    CYCWIT.</p>
+                <div class="cta-actions">
+                    <a href="#paths" class="btn btn-primary btn-lg" id="ctaStartBtn">
+                        Choose Your Path
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                    <a href="#features" class="btn btn-ghost btn-lg">Explore Features</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════ FOOTER ═══════════════════════════════ -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#hero" class="nav-logo">
+                        <span class="logo-icon">⚡</span>
+                        <span class="logo-text">CYC<span class="logo-accent">WIT</span></span>
+                    </a>
+                    <p>Choose Your Career With Information Technology. Your roadmap to a successful IT career starts
+                        here.</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Career Paths</h4>
+                        <ul>
+                            <li><a href="#paths">Web App Development</a></li>
+                            <li><a href="#paths">Web Dev Languages</a></li>
+                            <li><a href="#paths">Database Engineering</a></li>
+                            <li><a href="#paths">Data Science</a></li>
+                            <li><a href="#paths">Data Analytics</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Platform</h4>
+                        <ul>
+                            <li><a href="#features">Roadmaps</a></li>
+                            <li><a href="#features">Resources</a></li>
+                            <li><a href="#features">Skill Tests</a></li>
+                            <li><a href="#features">Resume Builder</a></li>
+                            <li><a href="#features">AI Advisor</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#stats">Stats</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 CYCWIT. All rights reserved.</p>
+                <p>Built with ❤️ for future IT professionals</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
